@@ -29,7 +29,7 @@ void ofFmodSoundStopAll();
 void ofFmodSoundSetVolume(float vol);
 void ofFmodSoundUpdate();						// calls FMOD update.
 float * ofFmodSoundGetSpectrum(int nBands);		// max 512...
-
+FMOD_SYSTEM * ofFmodGetSystem();
 
 // --------------------- player functions:
 class ofFmodSoundPlayer : public ofBaseSoundPlayer {

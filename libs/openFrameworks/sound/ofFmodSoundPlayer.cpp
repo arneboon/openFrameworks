@@ -39,6 +39,12 @@ void ofFmodSoundUpdate(){
 }
 
 //--------------------
+FMOD_SYSTEM * ofFmodGetSystem() {
+    ofFmodSoundPlayer::initializeFmod();
+    return sys;
+}
+
+//--------------------
 float * ofFmodSoundGetSpectrum(int nBands){
 
 	ofFmodSoundPlayer::initializeFmod();
